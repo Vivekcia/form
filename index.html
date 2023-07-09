@@ -27,24 +27,31 @@
   </style>
 </head>
 <body>
+    <?php
+    $rec =array(
+        array("name"=>"vivek", "age"=>"29", "city"=>"nagpur"),
+        array("name"=>"aakash", "age"=>"30", "city"=>"amravati")  
+        ); 
+    ?>
+  <a href="./forms.php">add</a>
   <table>
     <thead>
       <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-        <th>Header 3</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>city</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Data 1</td>
-        <td>Data 2</td>
-        <td>Data 3</td>
+        <td><?php echo $rec[0]['name'];?></td>
+        <td><?php echo $rec[0]['age'];?></td>
+        <td><?php echo $rec[0]['city'];?></td>
       </tr>
       <tr>
-        <td>Data 4</td>
-        <td>Data 5</td>
-        <td>Data 6</td>
+        <td><?php echo $rec[1]['name'];?></td>
+        <td><?php echo $rec[1]['age'];?></td>
+        <td><?php echo $rec[1]['city'];?></td>
       </tr>
     </tbody>
   </table>
